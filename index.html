@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+<style>
+    .container{
+        width:30%;
+        margin-left:20%;
+        height:700px;
+        background-color:rgb(74, 200, 200);
+        
+        border-color: rgb(150, 44, 150);
+        
+    }
+
+    form{
+        background-color:white;
+        padding: 10px 15px;
+
+        width:80%;
+        height:500px;
+        border:20px solid rgb(74, 201,  200);
+        
+        
+    }
+    .header{
+        background-color:rgb(74, 201, 201);
+        width: 100%;
+        height:100px;
+        
+    }
+
+    #heading{
+        margin-left:10px;
+        top:5px;
+        text-align:center;
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: cornflowerblue;
+    }
+    #app{
+        margin-left: 10px;
+        padding: 20px;
+    
+    }
+    #pick{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .prin{
+        width:100px;
+        
+    }
+    #inter{
+        width:250px;
+        height:50px;
+        border-radius:%;
+        
+
+        
+    }
+    #intern{
+        width:250px;
+        height:50px;
+        
+    }
+    #interne{
+        width:250px;
+        height:50px;
+
+    }
+    #internet{
+        width:250px;
+        height:50px;
+    }
+
+</style>
+
+       
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="header">
+        <h2 id="heading">COMPOUND INTEREST CALCULATOR</h2>
+        </div>
+        <form>
+        <div id="app">
+        <div class="prin">
+            <label for="cal" id="pick">principal</label><br><br>
+            <input type="number" v-model="principal" id="inter" placeholder="Principal"><br><br>
+            </div>
+            <div class="rat">
+            <label for="cal" id="pick">rate</label><br><br>
+            <input type="number" v-model="rate" id="intern" placeholder="Rate" step="0.01"><br><br>
+            </div>
+            <div class="comp">
+            <label for="cal" id="pick">compounding</label><br><br>
+            <input type="number" v-model="compounding"  id="interne"placeholder="compounding"><br><br>
+            </div>
+            <div class="year">
+            <label for="cal" id="pick">Time</label><br><br>
+            <input type="number" v-model="time" id="internet" placeholder="Time">
+            </div>
+
+            <P>COMPOUND INTEREST is: <b>{{ calculate }}</b></P>
+
+
+
+
+
+        </div>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src ="app.js"></script>
+    
+</body>
+
+</html>
